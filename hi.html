@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hi</title>
+	<style type="text/css">
+		body{
+			margin: 0px;
+			padding: 0px;
+		}
+		.navbar{
+			background: #555;
+			overflow: hidden;
+			font-family: arial;
+		}
+		.navbar a{
+			color: #fff;
+			text-decoration: none;
+			float: left;
+			padding: 12px 16px;
+			font-size: 15px;
+		}
+		.dropdown{
+			float: left;
+		}
+		.btn{
+			background: #555;
+			color: #fff;
+			padding: 12px;
+			font-size: 15px;
+			border: none;
+			outline: none;
+			padding-top: 12px;
+		}
+		.sub{
+			position: absolute;
+			background: #888;
+			display: none;
+		}
+		.sub a{
+			float: none; /*float affect off ma lo*/
+			display: block;
+		}
+		.navbar a:hover,.btn:hover{
+			background: #222;
+		}
+		.dropdown:hover .sub{
+			display: block;
+		}
+	</style>
+	
+</head>
+<body>
+		<div class="navbar">
+		<a href=""><b>LOBELIA</b></a>
+		<a href="">Home</a>
+			<div class="dropdown">
+				<button class="btn">Service</button>
+				<div class="sub">
+					<a href="">Software Devs</a>
+					<a href="">Web Design</a>
+					<a href="">Graphic Design</a>
+				</div>
+			</div>
+		<a href="">Gallery</a>
+		<a href="">About Us</a>
+		<a href="">Activity</a>
+		<a href="">Contact Us</a>
+	</div>
+
+</body>
+</html>

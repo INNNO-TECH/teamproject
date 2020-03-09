@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hello</title>
+  <style type="text/css">
+    .navimgone{
+      margin-left: 150px;
+    }
+    .navsearch{
+      margin-left: 40px;
+    }
+     body {
+      font-family: arial;
+    }
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  </style>
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- -------------------navbar------------------- --> 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <a class="navbar-brand" href="#">
+      <img src="image/FarmFresh Logo.png" class="navimgone" width="150" height="70" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+    <div class="input-group md-form form-sm form-2 pl-0">
+  <input class="form-control my-0 py-1 red-border navsearch" type="text" placeholder="Search" aria-label="Search">
+  <div class="input-group-append">
+    <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
+        aria-hidden="true"></i></span>
+  </div>
+</div>
+      
+      
+    </ul>
+    
+    <a class="navbar-brand" href="#">
+      <img src="image/shopping-cart.png" width="35" height="35" alt="">
+    </a>
+  </div>
+</nav>
+  <!-- ------------------------------------------- -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        
+        <div class="sidenav">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#clients">Clients</a>
+    <a href="#contact">Contact</a>
+      <button class="dropdown-btn">Dropdown 
+        <i class="fa fa-caret-down"></i>
+     </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <a href="#contact">Search</a>
+</div>
+
+      </div>
+      <div class="col-md-10">
+        <div class="conatiner">
+  <div class="row mb-3 mt-5">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="row mb-2">
+        <div class="col-md-4">
+          <img src="image/Untitled-1.png" class="image-fluid img-thumbnail fruitimg">
+          <h5>Ripe Blue Grape</h5>
+          <h6>Packet</h6>
+        </div>
+        <div class="col-md-4">
+          <img src="image/Untitled-1.png" class="image-fluid img-thumbnail">
+          <h5>Spinach</h5>
+          <h6>Packet</h6>
+        </div>
+        <div class="col-md-4">
+          <img src="image/Untitled-1.png" class="image-fluid img-thumbnail">
+          <h5>Salmon</h5>
+          <h6>Packet</h6>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-4">
+          <img src="image/Untitled-1.png" class="image-fluid img-thumbnail">
+          <h5>capsicum</h5>
+          <h6>Packet</h6>
+        </div>
+        <div class="col-md-4">
+          <img src="image/Untitled-1.png" class="image-fluid img-thumbnail">
+          <h5>Tomato</h5>
+          <h6>Packet</h6>
+        </div>
+        <div class="col-md-4">
+          <img src="image/Untitled-1.png" class="image-fluid img-thumbnail">
+          <h5>Brocolli</h5>
+          <h6>Packet</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="image/Untitled-1.png" class="image-fluid img-thumbnail">
+          <h5>Brocolli</h5>
+          <h6>Packet</h6>
+        </div>
+        <div class="col-md-4">
+          <img src="image/Untitled-1.png" class="image-fluid img-thumbnail">
+          <h5>Brocolli</h5>
+          <h6>Packet</h6>
+        </div>
+        <div class="col-md-4">
+          <img src="image/Untitled-1.png" class="image-fluid img-thumbnail">
+          <h5>Brocolli</h5>
+          <h6>Packet</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+</html>
